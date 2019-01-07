@@ -226,12 +226,63 @@ ISKCON New Vedic Cultural Center (NVCC) is a temple of Radha-Krishna located in 
   </div></div>
         
         
-        
-    
+       
    <div class="col-sm-4"> 
       <div class="panel panel-default">
    <div class="panel-heading"><center>Lavasa</center></div>
     <div class="panel-body"> <img class="img-responsive center-block" src="lavasa.jpg" alt="Lavasa" id="Lavasa" onclick="myFunction(this.id)" data-toggle="modal" data-target="#myModal">
          
         <p style="text-align:justify">
-        Lavasa is a private, planned city being built near Pune. It is stylistically based on the Italian town Portofino, w
+        Lavasa is a private, planned city being built near Pune. It is stylistically based on the Italian town Portofino, with a street and several buildings bearing the name of that town. Planned sports facilities include a Nick Faldo-designed golf course and a Manchester City-branded football academy. 
+        
+        
+        </p>  
+         <br/>
+         <center> <button style="color:blue" onclick="window.location.href='lavasa.html'">View more <span class="glyphicon glyphicon-arrow-right"></span></button></center>
+          
+          </div>    
+  </div></div>
+        
+        
+</div> <!--table end here-->
+    <script>
+    
+        function myFunction(_id)
+        {
+           
+            var path = document.getElementById(_id).src;
+            
+            document.getElementById("image_modal").src=path;
+             document.getElementById("header_modal").innerHTML=_id;
+            
+        }
+    
+    </script>
+    
+    
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="header_modal"></h4>
+        </div>
+        <div class="modal-body">
+         <img id="image_modal" class="img-responsive center-block"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>  <!-- modal end here -->
+    
+</div><!-- container end here -->
+
+</body>
+</html>
+
